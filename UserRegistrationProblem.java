@@ -8,21 +8,21 @@ public class UserRegistrationProblem
 {
 	public static void main(String[] args) 
 	{
-		System.out.println("Enter First name");
+		System.out.println("Enter Last name");
 		
 		Scanner sc = new Scanner(System.in);
-		String fname = sc.next();
+		String lname = sc.next();
 		
 		Pattern pattern = Pattern.compile("^[A-Z][a-z]{2,30}$");
-		Matcher matcher = pattern.matcher(fname);
+		Matcher matcher = pattern.matcher(lname);
 		
 		if (matcher.matches())
 		{
-			System.out.println("Valid First Name");
+			System.out.println("Valid Last Name");
 		}
 		else
 		{
-			System.out.println("Invalid First Name");
+			System.out.println("Invalid Last Name");
 		}
 	}
 }
